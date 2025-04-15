@@ -1,0 +1,160 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: #333;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+input[type="password"],
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#togglePassword {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  margin : 0px 0px 0px 0px;
+}
+
+#strengthBar {
+  height: 8px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  margin: 1rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#strengthBar::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+  background: linear-gradient(to right, #ef4444, #f59e0b, #10b981, #3b82f6);
+}
+
+ul#feedbackList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul#feedbackList li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+#crackTime {
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+  color: #4b5563;
+}
+
+label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  max-width: 80px;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1.25rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+#generatedPassword {
+  width: 30%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-creator {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.navbar-creator strong {
+  color: #3b82f6;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PassGuard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">PassGuard</div>
+    <div class="navbar-creator">by <strong>VarunSahu</strong></div>
+  </nav>
+  
+  <div class="card">
+    <h2>PassGuard</h2>
+    <div class="password-wrapper">
+      <input type="password" id="passwordInput" placeholder="Enter your password">
+      <button id="togglePassword" type="button" aria-label="Toggle password visibility">👁️</button>
+    </div>
+    <div id="strengthBar"></div>
+    <ul id="feedbackList"></ul>
+    <div id="crackTime"></div>
+  </div>
+  
+    <h2>Password Generator</h2>
+
+    <label for="lengthSelect">Length:</label>
+    <input type="number" id="lengthSelect" value="14" min="6" max="32">
+
+    <label><input type="checkbox" id="includeUpper" checked> Include Uppercase</label>
+    <label><input type="checkbox" id="includeLower" checked> Include Lowercase</label>
+    <label><input type="checkbox" id="includeNumbers" checked> Include Numbers</label>
+    <label><input type="checkbox" id="includeSymbols" checked> Include Symbols</label>
+
+    <button onclick="generatePassword()">Generate Password</button>
+    <input type="text" id="generatedPassword" readonly>
+    <button onclick="copyPassword()">📋 Copy</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
