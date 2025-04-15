@@ -31,6 +31,8 @@
 2. Open `index.html` in your browser.
 3. Start typing a password to see strength and suggestions.
 4. Use the generator to create strong passwords instantly.
+5. Access the live version of **PassGuard** at:  
+   [https://varunsahu258.github.io/PassGuard/](https://varunsahu258.github.io/PassGuard/)
 
 ## 📌 License
 
